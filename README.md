@@ -1,24 +1,27 @@
-# README
+# Travel Forecast 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Local Setup
 
-Things you may want to cover:
+### Prerequisites
 
-* Ruby version
+The rest of the setup assumes you have the following installed in your local environment.
 
-* System dependencies
+* Ruby 3.1.1. Recommended [RBenv](https://github.com/rbenv/rbenv) for managing your Ruby version.
+* Rails 7.0.8
+* Postgresql
+* Bundler 2.4.12
 
-* Configuration
+Other versions may work. If you wish to test other versions you will have to modify the `Gemfile`, remove `Gemfile.lock` and run `bundle install`.
 
-* Database creation
+### Running the Test Suite
 
-* Database initialization
+First, clone this repo and run the following commands.
 
-* How to run the test suite
+```
+bundle install
+rails db:create
+rails db:migrate
+bundle exec rspec
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You should have all passing tests. If you do not, make sure you have met the prerequisites.
