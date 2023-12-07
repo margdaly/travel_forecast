@@ -15,36 +15,36 @@
   "results": [
     {
       "providedLocation": {
-        "location": "north shore, hi"
+        "location": "fenway park, ma"
       },
       "locations": [
         {
-          "street": "",
-          "adminArea6": "North Shore",
+          "street": "4 Jersey St",
+          "adminArea6": "Fenway-Kenmore",
           "adminArea6Type": "Neighborhood",
-          "adminArea5": "Honolulu",
+          "adminArea5": "Boston",
           "adminArea5Type": "City",
-          "adminArea4": "Honolulu",
+          "adminArea4": "Suffolk",
           "adminArea4Type": "County",
-          "adminArea3": "HI",
+          "adminArea3": "MA",
           "adminArea3Type": "State",
           "adminArea1": "US",
           "adminArea1Type": "Country",
-          "postalCode": "96791",
-          "geocodeQualityCode": "A6XAX",
-          "geocodeQuality": "NEIGHBORHOOD",
+          "postalCode": "02215-4148",
+          "geocodeQualityCode": "P1AAA",
+          "geocodeQuality": "POINT",
           "dragPoint": false,
-          "sideOfStreet": "N",
+          "sideOfStreet": "R",
           "linkId": "0",
           "unknownInput": "",
           "type": "s",
           "latLng": {
-            "lat": 21.57039,
-            "lng": -158.09174
+            "lat": 42.34672,
+            "lng": -71.09888
           },
           "displayLatLng": {
-            "lat": 21.57039,
-            "lng": -158.09174
+            "lat": 42.34678,
+            "lng": -71.09865
           },
           "mapUrl": ""
         }
