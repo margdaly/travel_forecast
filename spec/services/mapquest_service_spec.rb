@@ -4,6 +4,10 @@ describe MapquestService do
   describe '#geocode_address' do
     it 'returns coordinates for a city' do
       location = 'denver,co'
+
+      stub_request(:get, "http://www.mapquestapi.com/geocoding/v1/address?location=#{location}") \
+        .to_return(status: 200, body: File.read('spec/fixtures/mapquest/geocode_denver,co.json'))
+
       response = MapquestService.new.geocode_address(location)
 
       expect(response).to be_a(Hash)
