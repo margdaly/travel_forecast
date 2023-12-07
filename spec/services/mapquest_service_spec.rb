@@ -52,7 +52,7 @@ describe MapquestService do
         expect(results).to have_key(:providedLocation)
         expect(results[:providedLocation]).to be_a(Hash)
         expect(results[:providedLocation]).to have_key(:location)
-        expect(results[:providedLocation][:location]).to eq(location) # 'denver,co'
+        expect(results[:providedLocation][:location]).to eq(location) # 'fenway park, ma'
         expect(results).to have_key(:locations)
         expect(results[:locations]).to be_a(Array)
 
