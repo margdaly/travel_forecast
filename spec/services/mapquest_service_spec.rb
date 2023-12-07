@@ -38,6 +38,9 @@ describe MapquestService do
     it 'returns coordinates for a place' do
       location = 'fenway park, ma'
 
+      stub_request(:get, "http://www.mapquestapi.com/geocoding/v1/address?location=#{location}") \
+        .to_return(status: 200, body: File.read('spec/fixtures/mapquest/geocode_place.json'))
+
       response = MapquestService.new.geocode_address(location)
 
         expect(response).to be_a(Hash)
