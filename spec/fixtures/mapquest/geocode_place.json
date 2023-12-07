@@ -1,0 +1,54 @@
+{
+  "info": {
+    "statuscode": 0,
+    "copyright": {
+      "text": "© 2023 MapQuest, Inc.",
+      "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+      "imageAltText": "© 2023 MapQuest, Inc."
+    },
+    "messages": []
+  },
+  "options": {
+    "maxResults": -1,
+    "ignoreLatLngInput": false
+  },
+  "results": [
+    {
+      "providedLocation": {
+        "location": "north shore, hi"
+      },
+      "locations": [
+        {
+          "street": "",
+          "adminArea6": "North Shore",
+          "adminArea6Type": "Neighborhood",
+          "adminArea5": "Honolulu",
+          "adminArea5Type": "City",
+          "adminArea4": "Honolulu",
+          "adminArea4Type": "County",
+          "adminArea3": "HI",
+          "adminArea3Type": "State",
+          "adminArea1": "US",
+          "adminArea1Type": "Country",
+          "postalCode": "96791",
+          "geocodeQualityCode": "A6XAX",
+          "geocodeQuality": "NEIGHBORHOOD",
+          "dragPoint": false,
+          "sideOfStreet": "N",
+          "linkId": "0",
+          "unknownInput": "",
+          "type": "s",
+          "latLng": {
+            "lat": 21.57039,
+            "lng": -158.09174
+          },
+          "displayLatLng": {
+            "lat": 21.57039,
+            "lng": -158.09174
+          },
+          "mapUrl": ""
+        }
+      ]
+    }
+  ]
+}

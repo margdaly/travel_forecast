@@ -6,7 +6,7 @@ describe MapquestService do
       location = 'denver,co'
 
       stub_request(:get, "http://www.mapquestapi.com/geocoding/v1/address?location=#{location}") \
-        .to_return(status: 200, body: File.read('spec/fixtures/mapquest/geocode_denver,co.json'))
+        .to_return(status: 200, body: File.read('spec/fixtures/mapquest/geocode_city.json'))
 
       response = MapquestService.new.geocode_address(location)
 
