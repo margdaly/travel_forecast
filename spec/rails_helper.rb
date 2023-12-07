@@ -12,14 +12,10 @@ require_relative '../config/environment'
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
 require 'shoulda/matchers'
-require 'support/factory_bot'
-require 'support/helper_methods'
-require "capybara_table/rspec"
-# Add additional requires below this line. Rails is not loaded until this point!
-require 'simplecov'
-SimpleCov.start 'rails'
-# Requires supporting ruby files with custom matchers and macros, etc, in
 
+# Add additional requires below this line. Rails is not loaded until this point!
+
+# Requires supporting ruby files with custom matchers and macros, etc, in
 
 # Checks for pending migrations and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove these lines.
@@ -35,7 +31,6 @@ RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
   config.include Capybara::DSL
 
-  WebMock.disable_net_connect!(allow_localhost: true)
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
